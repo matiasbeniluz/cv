@@ -1,70 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matias's Personal Site</title>
-</head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Matias Beniluz</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico">
+  </head>
 
-<body>
-    <table cellspacing="20">
-        <tr>
-            <td><img src="Images/IMG_2001.jpeg" alt="car" width="200" height="150"></td>
-            <td> <h1>Matias Beniluz</h1>
-                <p><em>Computer Science Student at <strong><a href="https://concordia.ca">Concordia University</a></strong></em></p>
-                <p>I am a student. I ❤️ tech and cars.</p></td>
-        </tr>
-    </table>
-   <hr>
-   <h3>Education</h3>
-   <ul>
-       <li>Bachelors of Computer Science - Concordia University</li>
-       <li>DCS Commerce - Champlain College</li>
-   </ul>
+  <body>
+    <div class="top-container">
+        <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
+        <h1 class="name">I'm <span class="matias">Matias</span>.</h1>
+        <p class="title">a <span class="pro">pro</span>grammer.</p>
+        <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
+        <img src="images/mountain.png" alt="mountain-img">
+    </div>
+	
+    <div class="middle-container">
+        <div class="profile">
+          <img class="pfp" src="images/man.png" alt="profile-picture">
+          <h2>Hello.</h2>
+          <p class="intro">I am a computer science student at Concordia University. I love cars and programming.</p>
+        </div>
+        <hr>
+        <div class="skills">
+          <h2>My Skills.</h2>
+          <div class="skill-row">
+            <img class="code-image" src="images/programming.gif" alt="programming">
+            <h3>Java and Web Development</h3>
+            <p>I developed a class management program using object-oriented programming and I am currently learning web development.</p>
+          </div>
+          <div class="skill-row">
+            <img class="sql-image" src="images/database.png" alt="SQL">
+            <h3>SQL</h3>
+            <p>I took a course on SQL using PostgreSQL where I created queries in order to answer data analytics and business-focused questions.</p>
+          </div>
+        </div>
+        <hr class="hidden">
+        <div class="contact-me">
+          <h2 style="color: #00ADB5;">Get In Touch</h2>
+          <h3 style="color: #EEEEEE; padding-bottom: 20px;">If you are looking for a passionate intern.</h3>
+          <p></p>
+          <a class="btn" href="mailto:matiasbeniluz@gmail.com">CONTACT ME</a>
+          <br>
+        </div>
+      </div>
+      
+    
+      <div class="bottom-container"> 
+        <a class="footer-link" href="https://www.linkedin.com/in/matiasbeniluz/" target="_blank">LinkedIn</a>
+        <a class="footer-link" href="https://github.com/matiasbeniluz" target="_blank">GitHub</a>
+        <p class="copyright">© 2022 Matias Beniluz.</p>
+      </div>
+      
+  </body>
 
-   <hr>
-   
-   <h3>Work Experience</h3>
-   <table cellspacing = "10">
-       <thead>
-           <tr>
-           <th>Dates</th>
-           <th>Work</th>
-       </tr>
-       </thead>
-       
-       <tr>
-           <td>2019-2022</td>
-           <td>Sales Associate</td>
-       </tr>
 
-       <tr>
-           <td>2022-Now</td>
-           <td>BCompSc Student</td>
-       </tr>
-   </table>
-   
-   <hr>
 
-   <h3>Skills</h3>
-   <table cellspacing="10">
-       <tr>
-           <td>Java</td>
-           <td>⭐⭐⭐</td>
-           <td>Python</td>
-           <td>⭐</td>
-       </tr>
-       <tr>
-           <td>Driving</td>
-           <td>⭐⭐⭐⭐⭐</td>
-           <td>Video Games</td>
-           <td>⭐⭐⭐⭐</td>
-       </tr>
-   </table>
-
-   <hr>
-   <h4><a href="hobbies.html">My Hobbies</a> <a href="contact.html">Contact me</a></h4>
-   
-</body>
 </html>
