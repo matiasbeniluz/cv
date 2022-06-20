@@ -4,19 +4,34 @@
 }
 
 .container-fluid {
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
+
 }
 
 body {
     font-family: "Monserrat", sans-serif;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Monserrat-Bold", sans-serif;
+}
+
+p {
+    color: #afafaf;
+}
+
+/* Headings */
+
+.big-heading {
     font-family: "Monserrat-Black", sans-serif;
     font-size: 3.5rem;
     line-height: 1.5;
 }
 
+.section-heading {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
 
 
 /* Navigation Bar */
@@ -50,13 +65,32 @@ h1 {
 
 .iphone {
     width: 60%;
-    transform: rotate(25deg)
+    transform: rotate(25deg);
+    position: relative;
+}
+
+#title {
+    height: 700px;
+}
+
+@media (max-width: 1028px) {
+    #title {
+        height: auto;
+        text-align: center;
+    }
+
+    .iphone {
+        transform: rotate(0);
+        position: static;
+    }
 }
 
 /* Features */
 
 #features {
     padding: 7% 15%;
+    background-color: #FFF;
+    position: relative;
 }
 
 .feature-box {
@@ -64,14 +98,6 @@ h1 {
     padding: 5%;
 }
 
-h3 {
-    font-family: "Monserrat-Bold", sans-serif;
-    font-size: 1.5rem;
-}
-
-p {
-    color: #afafaf;
-}
 
 .feature-icon {
     color: #EF8172;
@@ -80,4 +106,93 @@ p {
 
 .feature-icon:hover {
     color: #FF4C68;   
+}
+
+/* Testimonials */
+#testimonials {
+    
+    text-align: center;
+    background-color: #EF8172;
+    color: #FFF;
+}
+
+.testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+/* Press */
+#press {
+    background-color: #EF8172;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+/* Pricing */
+
+#pricing {
+    padding: 100px;
+    text-align: center;
+}
+
+.card-deck {
+    text-align: center;
+}
+
+.pricing-column {
+    margin: 3% 2%;
+}
+
+.signup {
+    width: 100%;
+}
+
+.spaced {
+    margin-top: 41px;
+}
+
+.price-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+/* Call to Action */
+
+#cta {
+    text-align: center;
+    background-color: #FF4C68;
+    color: #FFF;
+    font-family: "Monserrat-Black", sans-serif;
+    padding: 7% 15%;
+}
+
+.CTA-text {
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+/* Footer */
+
+#footer {
+    text-align: center;
+    padding: 7% 15%;
+}
+
+.footer-icon {
+    padding: 20px 10px;
 }
