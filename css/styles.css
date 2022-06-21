@@ -2,11 +2,18 @@
 
 @media (prefers-color-scheme: dark) {
    .light {
-    background-color: #222831;
+    background-color: #1e2227;
     color: #EEEEEE;
-    }    
+    } 
 }
 
+.dark {
+    background-color: #222831;
+    color: #EEEEEE;
+}
+
+
+/* General */
 
 body {
    margin: 0;
@@ -16,7 +23,7 @@ body {
 
 a {
     color: #EEEEEE;
-    padding: 0px 3px;
+    padding: 0px 0px;
     text-decoration: none;
 }
 
@@ -30,18 +37,25 @@ h1 {
 
 h2 {
     color: #00ADB5;
+    padding-bottom: 60px;
 }
 
-h3 {
-    color: #00ADB5;
+p {
+    line-height: 2;
 }
 
-hr {
-    border-top: dotted 7.5px #EAF6F6; 
-    border-bottom: none;
-    width: 60px;
-    margin-top: 65px;
-    margin-bottom: 65px;
+.center-align {
+    text-align: center;
+}
+
+
+/* Top Container */
+
+.top-container {
+    background-color: #222831;
+    
+    height: 100%;
+    width: 100%;
 }
 
 .name {
@@ -50,109 +64,21 @@ hr {
     margin-bottom: 0;
 }
 
+.matias {
+    color: #00ADB5;
+}
+
 .title {
     color: #EEEEEE;
     font-size: 1.25rem;
     margin-top: 0px;
 }
 
-.top-container {
-    background-color: #222831;
-    padding: 100px 0 0;
-    height: 100%;
-    width: 100%;
-}
-
-.contact-me {
-    background-color: #393E46;
-    padding: 25px 0px 50px;
-}
-
-
-p {
-    line-height: 2;
-}
-
-/* Skills */
-
-.skill-row {
-    width: 50%;
-    margin: 100px auto;
-    text-align: left;
-}
-
-.code-image {
-    width: 25%;
-    margin-right: 30px;
-    float: left;
-}
-
-.sql-image {
-    width: 25%;
-    margin-left: 30px;
-    float: right;
-}
-
-.bottom-container {
-    background-color: #222831;   
-    padding: 50px 0px 10px;
-}
-
-.matias {
-    color: #00ADB5;
-}
-
-.hidden {
-    visibility: hidden;
-}
 .pro {
     text-decoration: underline;
 }
 
-.intro {
-    width: 30%;
-    margin: auto;
-}
-
-.top-cloud {
-    position: absolute;
-    right: 30%;
-    top: 45px;
-}
-.bottom-cloud {
-    position: absolute;
-    left: 20%;
-}
-
-.pfp {
-    padding-top: 70px;
-    height: 100px;
-}
-
-.btn {
-    background: #00ADB5;
-    -webkit-border-radius: 28;
-    -moz-border-radius: 28;
-    border-radius: 8px;
-    color: #ffffff;
-    font-size: 20px;
-    background: #00ADB5;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-  }
-  
-  .btn:hover {
-    background: #28969c;
-    text-decoration: none;
-  }
-
-  .copyright {
-    color: #00ADB5;
-    font-size: 0.75rem;
-    padding: 20px 0px;
-  }
-
-  .bg {
+.bg {
     width: 100%;
     height: 550px;
     align-items: center;
@@ -167,9 +93,170 @@ p {
     );  
     animation: AnimateBG 15s ease infinite;
   }
-  
+
   @keyframes AnimateBG { 
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
   }
+
+/* Navbar Button */
+
+.navbar {
+    padding: 15px 0 0;
+}
+
+.nav-item {
+    padding: 0 25px;
+}
+
+/* Intro */
+
+#intro {
+    padding: 5% 15%;
+}
+
+.pfp {
+    width: 100px;
+    padding-top: 0;
+    padding-bottom: 30px;
+}
+
+
+/* Skills */
+
+#skills {
+    padding: 5% 15%;
+    text-align: left;
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .skill-desc, #education {
+        text-align: center;
+    }
+}
+
+.progress-bar {
+    background-color: #00ADB5;
+}
+
+.skill-desc {
+    padding-top: 10px;
+    padding-bottom: 75px;
+}
+
+.skill-row {
+    display: flex;
+    align-items: center;
+}
+
+div.progress {
+    margin: 0;
+}
+
+.code-image {
+    width: 25%;
+    margin-right: 30px;
+    float: left;
+}
+
+.sql-image {
+    width: 25%;
+    margin-left: 30px;
+    float: right;
+}
+
+/* Projects */
+
+#projects {
+    padding: 0;
+}
+
+.project-screenshot {
+    width: 100%;
+}
+
+.projects-title {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
+
+.tindog {
+    background: rgba(216, 216, 216, 0.32);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.8px);
+    -webkit-backdrop-filter: blur(10.8px);
+    border: 1px solid rgba(216, 216, 216, 0.13);
+    padding: 0;
+}
+
+.tindog-description {
+    padding: 10px;
+}
+
+
+/* Education */
+
+.education {
+    padding: 3% 15% 0;
+    text-align: left;
+    margin: 0;
+}
+
+.edu-desc {
+    padding-bottom: 50px;
+}
+
+/* Contact Section */
+
+#contact {
+    padding: 25px 0px 50px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.contact-message {
+    padding-bottom: 10px;
+
+}
+
+.btn {
+    background: #00ADB5;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 20px;
+    background: #00ADB5;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .btn:hover {
+    background: #28969c;
+    text-decoration: none;
+  }
+
+
+/* Footer */
+
+.footer-icon {
+    padding: 0 15px;
+}
+
+.bottom-container {
+    background-color: #222831;   
+    padding: 50px 0px 10px;
+}
+
+.copyright {
+    color: #00ADB5;
+    font-size: 0.75rem;
+    padding: 20px 0px;
+}
