@@ -5,54 +5,199 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Matias Beniluz</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/91c6ca5306.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="favicon.ico?">
   </head>
 
-  <body>
+
+
+  
+  <!-- Title -->
+
+  <body class="light">
     <div class="top-container bg">
+      
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark ms-auto">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#education">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
         <h1 class="name">I'm <span class="matias">Matias</span>.</h1>
         <p class="title">a <span class="pro">pro</span>grammer.</p>
 
     </div>
-	
-    <div class="middle-container light">
-        <div class="profile">
-          <img class="pfp" src="images/man.png" alt="profile-picture">
-          <h2>Hello.</h2>
-          <p class="intro">I am a computer science student at Concordia University. I love cars and programming.</p>
-        </div>
-        <hr>
-        <div class="skills">
-          <h2>My Skills.</h2>
-          <div class="skill-row">
-            <img class="code-image" src="images/web-development.png" alt="programming">
-            <h3>Java and Web Development</h3>
-            <p>I developed a class management program using object-oriented programming and I am currently learning web development.</p>
-          </div>
-          <div class="skill-row">
-            <img class="sql-image" src="images/database.png" alt="SQL">
-            <h3>SQL</h3>
-            <p>I took a course on SQL using PostgreSQL where I created queries in order to answer data analytics and business-focused questions.</p>
-          </div>
-        </div>
-        <hr class="hidden">
-        <div class="contact-me">
-          <h2 style="color: #00ADB5;">Get In Touch</h2>
-          <h3 style="color: #EEEEEE; padding-bottom: 20px;">If you are looking for a passionate intern.</h3>
-          <p></p>
-          <a class="btn" href="mailto:matiasbeniluz@gmail.com">CONTACT ME</a>
-          <br>
-        </div>
+
+  <!-- Intro -->
+
+  <div id="intro" class="container-fluid light">
+      <img class="pfp" src="images/man.png" alt="profile-picture">
+      <h2 class="salutation">Hello.</h2>
+      <p class="intro">I am a computer science student at Concordia University. I love cars and programming.</p>
+  </div>
+
+  <!-- Skills -->
+
+  <div id="skills" class="skill-row row dark">
+    <h2 class="center-align">My Skills.</h2>
+
+    <!-- Java -->
+    <div class="col-lg-4 col-md-4">
+      <h4>Java</h4>
+    </div>
+    <div class="col-lg-8 col-md-8">
+      <div class="progress" style="height: 20px;">
+        <div class="progress-bar" role="progressbar" style="width: 80%"></div>
       </div>
-      
+    </div>
+    <div class="col-lg-4 col-md-4">
+    </div>
+    <div class="col-lg-8 col-md-8 skill-desc">
+      I have taken two university classes on Java and developed a class management system.
+    </div>
+
+   <!-- SQL -->
+    <div class="col-lg-4 col-md-4">
+      <h4>SQL</h4>
+    </div>
+    <div class="col-lg-8 col-md-8">
+      <div class="progress" style="height: 20px;">
+        <div class="progress-bar" role="progressbar" style="width: 77%"></div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4">
+    </div>
+    <div class="col-lg-8 col-md-8 skill-desc">
+      I took a SQL course where I learned how to create queries using PostgreSQL in order to answer data analytics and business-focused questions.
+    </div>
     
-      <div class="bottom-container"> 
-        <a class="footer-link" href="https://www.linkedin.com/in/matiasbeniluz/" target="_blank">LinkedIn</a>
-        <a class="footer-link" href="https://github.com/matiasbeniluz" target="_blank">GitHub</a>
-        <p class="copyright">© 2022 Matias Beniluz.</p>
+
+    <!-- HTML -->
+    <div class="col-lg-4 col-md-4">
+      <h4>Web Development</h4>
+    </div>
+    <div class="col-lg-8 col-md-8">
+      <div class="progress" style="height: 20px;">
+        <div class="progress-bar" role="progressbar" style="width: 65%"></div>
       </div>
+    </div>
+    <div class="col-lg-4 col-md-4">
+    </div>
+    <div class="col-lg-8 col-md-8 skill-desc">
+      I made this website using HTML, CSS, and Bootstrap 5. Moreover, I am currently learning JavaScript, Node, React, and MongoDB and working on projects.
+    </div>
+
+    <!-- Office 365 -->
+    <div class="col-lg-4 col-md-4">
+      <h4>Office 365</h4>
+    </div>
+    <div class="col-lg-8 col-md-8">
+      <div class="progress" style="height: 20px;">
+        <div class="progress-bar" role="progressbar" style="width: 100%"></div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4">
+    </div>
+    <div class="col-lg-8 col-md-8 skill-desc">
+      I have over 8 years of experience using the Microsoft Office Suite, including Access.
+    </div>
+
+
+  </div>
+
+  <!-- Projects -->
+  <div id="projects" class="container-fluid dark">
+    <h2 class="projects-title">My Projects.</h2>
+  </div>
+  <!-- <div id="projects" class="container-fluid light"> -->
+    <div id="projectsCarousel" class="carousel slide" data-bs-ride="false">
       
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="tindog.html" target="blank_"><img class="project-screenshot img-fluid" src="images/tindog-screenshot.png" alt="tindog-screenshot"></a>
+          <div class="carousel-caption d-none d-md-block tindog">
+            <h5 class="tindog-description">The goal of this project was to learn how to make a responsive website using BootStrap</h5>
+          </div>
+        </div>
+      </div>
+      <!-- <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button> -->
+    </div>
+  <!-- </div> -->
+
+  <!-- Education -->
+  <div id="education" class="education row dark">
+    <h2 class="center-align">My Education.</h2>
+    <div class="col-lg-6 col-md-4 col-sm-6">
+      <h4>2022-2024</h4>
+    </div>
+    <div class="col-lg-6 col-md-8 col-sm-6 edu-desc">
+      <h4>Bachelor of Computer Science</h4>
+      <h5>Concordia University, Montreal</h5>
+      <h6>Member of the Institute for Co-operative Education</h6>
+    </div>
+    <div class="col-lg-6 col-md-4 col-sm-6">
+      <h4>2019-2021</h4>
+    </div>
+    <div class="col-lg-6 col-md-8 col-sm-6 edu-desc">
+      <h4>Commerce DCS</h4>
+      <h5>Concordia University, St-Lambert</h5>
+      <h6>Honor Roll Student</h6>
+    </div>
+    <div class="col-lg-4 col-md-4"></div>
+    
+  </div>
+
+
+	
+  <div id="contact" class="container-fluid light">
+    <h2>Get In Touch</h2>
+    <h3 class="contact-message">If you are looking for a passionate intern.</h3>
+    <p></p>
+    <a class="btn" href="mailto:matiasbeniluz@gmail.com">CONTACT ME</a>
+    <a class="btn" href="files/matiasbeniluz-resume.pdf" download>DOWNLOAD CV</a>
+  </div>
+    
+
+  <div class="bottom-container"> 
+    <a class="footer-icon" href="https://www.linkedin.com/in/matiasbeniluz/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+    <a class="footer-icon" href="https://github.com/matiasbeniluz" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+    <p class="copyright">© 2022 Matias Beniluz.</p>
+  </div>
+      
+
   </body>
 
 </html>
