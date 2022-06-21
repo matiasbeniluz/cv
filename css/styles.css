@@ -1,3 +1,13 @@
+/* Dark Mode */
+
+@media (prefers-color-scheme: dark) {
+   .light {
+    background-color: #222831;
+    color: #EEEEEE;
+    }    
+}
+
+
 body {
    margin: 0;
    text-align: center;
@@ -36,7 +46,7 @@ hr {
 
 .name {
     color: #EEEEEE;
-    margin-top: 10%;
+    margin-top: 150px;
     margin-bottom: 0;
 }
 
@@ -58,17 +68,22 @@ hr {
     padding: 25px 0px 50px;
 }
 
+
+p {
+    line-height: 2;
+}
+
+/* Skills */
+
 .skill-row {
     width: 50%;
     margin: 100px auto;
     text-align: left;
 }
-p {
-    line-height: 2;
-}
 
 .code-image {
-    width: 30%;
+    width: 25%;
+    margin-right: 30px;
     float: left;
 }
 
@@ -150,7 +165,7 @@ p {
           rgba(152,68,183,1) 51%, 
           rgba(255,53,127,1) 100%
     );  
-    animation: AnimateBG 20s ease infinite;
+    animation: AnimateBG 15s ease infinite;
   }
   
   @keyframes AnimateBG { 
